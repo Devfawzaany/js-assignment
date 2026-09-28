@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js assignment</title>
+</head>
+<body>
+   <h1 id="text">How are you feeling?</h1> 
+   <button id="happybtn">happy</button>
+   <button id="sadbtn">sad</button>
+   <button id="resetbtn">Reset</button>
+
+
+   <h2 id="message">Welcome to my website</h2>
+   <button id="darkmode">Dark mode</button>
+   <button id="lightmode">Light mode</button>
+   <button id="reset">Reset</button>
+
+
+   <script>
+    const message = document.getElementById("message");
+    const darkbtn = document.getElementById("darkmode");
+    const lightbtn = document.getElementById("lightmode");
+    const reset = document.getElementById("reset");
+
+    darkbtn.addEventListener("click", function() {
+        message.textContent = "Dark mode is on!";
+        message.style.color = "white"
+        message.style.backgroundColor = "black"
+        
+    })
+
+    lightbtn.addEventListener("click", function() {
+        message.textContent = "light mode is on!";
+        message.style.color = "black"
+        message.style.backgroundColor = "white"
+        
+    })
+
+    reset.addEventListener("click", function() {
+        message.textContent = "Welcome back to my website";
+        message.style.color = "black"
+        message.style.backgroundColor = "white"
+        
+    })
+
+
+
+
+
+
+
+
+    const text = document.getElementById("text");
+    const happybtn = document.getElementById("happybtn");
+    const sadbtn = document.getElementById("sadbtn");
+    const resetbtn = document.getElementById("resetbtn");
+    
+    
+        happybtn.addEventListener("click", function() {
+            text.textContent = "you are feeling happy!";
+            text.style.color = "green";
+
+        });
+
+        sadbtn.addEventListener("click", function() {
+            text.textContent = "you are feeling sad!";
+            text.style.color = "blue";
+        });
+
+        resetbtn.addEventListener("click", function() {
+            text.textContent = "How are you feeling?";
+            text.style.color = "black";
+        });
+
+
+
+
+
+
+
+   </script>
+
+</body>
+</html>
